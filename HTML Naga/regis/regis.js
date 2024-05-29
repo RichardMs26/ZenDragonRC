@@ -59,7 +59,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (valid) {
             alert('success');
-            form.submit();
+            // form.submit();
+            window.location.href='../HomePage/homepage.html';
         }
     });
 
