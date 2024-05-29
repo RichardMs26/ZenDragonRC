@@ -1,0 +1,173 @@
+
+@font-face {
+    font-family: "Pirata one";
+    src: url('../PirataOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Sedans-Regular";
+    src: url('../Sedan-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Sedans-Italic";
+    src: url('../Sedan-Italic.ttf');
+}
+
+
+body::-webkit-scrollbar {
+    display: none; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Pirata one";
+}
+
+.bg{
+    background-color: #000000;
+    height: 100px;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px 17%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.footerlogo{
+    width: 5vw;
+}
+
+.footer-about h3{
+    font-weight: 100;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+    
+}
+
+.footer-links{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-about h3, .footer-links h3, .footer-contact h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-about p, .footer-contact p {
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+.footer-links ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    gap: 2vw;
+}
+
+.footer-links ul li {
+    margin-bottom: 1vw;
+}
+
+.footer-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: rgb(212,175,55);
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1.6vw;
+}
+
+.footer-social a {
+    color: white;
+    margin-top: 0.5vw;
+    transition: transform 0.3s;
+}
+
+.footer-social a:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    margin-top: -8px;
+    padding-top: 10px;
+    font-size: 0.9rem;
+}
+
+
+@media (min-width: 0px) and (max-width: 1440px){
+
+} 
+
+@media (min-width: 0px) and (max-width: 1025px) {
+    
+}
+
+@media (min-width: 0px) and (max-width: 821px){
+}
+
+
+@media (min-width: 0px) and (max-width: 768px) {
+}
+
+
+
+@media (min-width: 0px) and (max-width: 678px) {
+
+}
+
+@media (min-width: 0px) and (max-width: 673px) {
+
+    .footerlogo{
+        width: 15vw;
+        margin-top: 2vw;
+    }
+
+    .footer-links{
+        font-size: 3.2vw;
+    }
+
+    
+}
+
+
+@media (min-width: 0px) and (max-width: 321px){ 
+    .footer-contact p {
+        font-size: 4.5vw;
+    }
+    
+}

@@ -1,0 +1,352 @@
+@font-face {
+    font-family: "Pirata One";
+    src: url(PirataOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Sedan-Regular";
+    src: url(Sedan-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Pirata One";
+    box-sizing: border-box;
+    color: #262926bb;
+}
+
+h1 {
+    font-size: 2.5vw;
+    text-align: center;
+    margin-bottom: 1.5vw;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(25, 136, 82, 0.4), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0),rgba(255, 255, 255, 0), rgba(255, 255, 255, 0),  rgba(0, 0, 0, 1)), url(bgg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    width: 40%;
+    max-width: 50vw;
+    padding: 1.4vw;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 2vw;
+    box-shadow: 0px 9px 25px -15px rgb(0 0 0);
+    margin-top: 3vw;
+}
+
+form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.login .box {
+    width: 50vw auto;
+    height: 37vw;
+    background-color: #fff;
+    padding: 5vw;
+    padding-top: 1vw;
+    border-radius: 2vw;
+    box-shadow: 0px 9px 25px -15px rgba(0, 0, 0, 0.5);
+}
+
+.box form .input_box {
+    text-align: center;
+    border: 1px solid #00000034;
+    border-radius: 0.3vw;
+    margin-bottom: 1.3vw;
+    position: relative;
+}
+
+.box form .input_box input {
+    width: 95%;
+    font-size: 1vw;
+    padding: 0.4vw 0vw;
+    border: none;
+    outline: none;
+}
+
+.box form .input_box label {
+    position: absolute;
+    left: 0.4vw;
+    top: -1.1vw;
+    font-size: 1.1vw;
+    background-color: #fff;
+    padding: 0vw 0.4vw;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.box form .error-message {
+    color: red;
+    font-size: 1vw;
+    margin-top: 0vw;
+    display: none;
+}
+
+.box form .gender-box,
+.box form .gender {
+    display: flex;
+    align-items: center;
+    column-gap: 5vw;
+}
+
+.box form .gender {
+    column-gap: 0.5vw;
+    cursor: pointer;
+}
+
+.gender-box {
+    display: flex;
+    margin-bottom: 1vw;
+}
+
+h3 {
+    font-size: 1.2vw;
+    font-weight: 100;
+    margin-bottom: 0.4vw;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 0.7vw;
+    width: 100%;
+    color: #fff;
+    font-size: 1.3vw;
+    cursor: pointer;
+    margin-bottom: 1vw;
+    border-radius: 0.4vw;
+    background: #244532;
+    transition: ease-in 0.2s;
+}
+
+button:hover {
+    background: #4d9b6d;
+}
+
+.checkcapt {
+    font-family: "Pirata One";
+    font-size: 1vw;
+}
+
+.footer-about h3, .footer-contact p{
+    color: white;
+}
+
+.footer-bottom p{
+    color: white;
+}
+
+
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+    h1 {
+        font-size: 3.5vw;
+    }
+
+    .login {
+        width: 50%;
+        max-width: 70vw;
+    }
+
+    .login .box {
+        width: 60vw auto;
+        height: 45vw;
+    }
+
+    .box form .input_box {
+        height: 3.5vw;
+        margin-bottom: 1.4vw;
+    }
+
+    .box form .input_box input {
+        font-size: 1.5vw;
+
+    }
+
+    .box form .input_box label {
+        font-size: 1.4vw;
+    }
+
+    h3 {
+        font-size: 1.4vw;
+        font-weight: 100;
+        margin-bottom: 0.4vw;
+    }
+
+    .box form .error-message {
+        font-size: 1.2vw;
+        margin-top: 0.5vw;
+    }
+    button {
+        font-size: 2vw;
+    }
+
+    .checkcapt {
+        font-size: 1.2vw;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    h1 {
+        font-size: 4.5vw;
+    }
+
+    .login {
+        width: 60%;
+        max-width: 70vw;
+    }
+
+    .login .box {
+        width: 60vw auto;
+        height: 55vw;
+    }
+
+    .box form .input_box {
+        height: 4.5vw;
+        margin-bottom: 2vw;
+    }
+
+    .box form .input_box input {
+        font-size: 1.6vw;
+    }
+    .box form .error-message {
+        font-size: 1.4vw;
+        margin-top: 1.5vw;
+    }
+    .box form .input_box label {
+        font-size: 1.6vw;
+    }
+
+    h3 {
+        font-size: 2vw;
+        font-weight: 100;
+        margin-bottom: 0.4vw;
+    }
+
+    button {
+        font-size: 2.5vw;
+    }
+
+    .checkcapt {
+        font-size: 1.6vw;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 620px){
+    
+    .box form .input_box {
+        height: 4vw;
+        margin-bottom:2vw;
+    }
+    
+    .box form .error-message {
+        font-size: 1.4vw;
+        margin-top: 0.4vw;
+    }
+
+    
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 550px){
+    
+    .box form .input_box {
+        height: 5vw;
+        margin-bottom:2.3vw;
+    }
+    
+    .box form .error-message {
+        font-size: 1.7vw;
+        margin-top: 1vw;
+    }
+
+    .login .box {
+        width: 60vw auto;
+        height: 62vw;
+    }
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 435px) {
+    h1 {
+        font-size: 6.5vw;
+        margin-bottom: 3.5vw;
+    }
+
+    .login {
+        width: 80%;
+        max-width: 90vw;
+    }
+
+    .login .box {
+        width: 60vw auto;
+        height: 105vw;
+    }
+
+    .box form .input_box {
+        height: 9.4vw;
+        border-radius: 1.2vw;
+        margin-bottom: 4.5vw;
+    }
+
+    .box form .input_box input {
+        font-size: 5vw;
+    }
+
+    .box form .input_box label {
+        font-size: 3.7vw;
+        top: -3.1vw;
+        left: 1.8vw;
+    }
+
+    .box form .error-message {
+        font-size: 2.5vw;
+        margin-top: 2vw;
+    }
+
+    h3 {
+        font-size: 4vw;
+    }
+
+    button {
+        font-size: 5vw;
+        margin-top: 1.8vw;
+        border-radius: 1.2vw;
+        margin-bottom: 1.8vw;
+    }
+
+    .checkcapt {
+        font-size: 2.6vw;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+    h1 {
+        font-size: 7.5vw;
+        margin-bottom: 3.5vw;
+    }
+
+    .login .box {
+        width: 60vw auto;
+        height: 118vw;
+    }
+
+    button {
+        font-size: 6.5vw;
+    }
+
+    .checkcapt {
+        font-size: 3.5vw;
+    }
+}

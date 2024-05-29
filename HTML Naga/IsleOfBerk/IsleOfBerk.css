@@ -1,0 +1,285 @@
+@font-face {
+    font-family: "Pirata one";
+    src: url(PirataOne-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Pirata one";
+    box-sizing: border-box;
+    color: #623700;
+    font-weight: 100;
+}
+
+.navbar a{
+    color: #623700  !important;
+}
+
+h1{
+    font-size: 100px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: -180px;
+}
+
+.scroll h3{
+    font-size: 100px;
+    text-align: center;
+    margin-top: -120px;
+    margin-bottom: 30px;
+}
+
+.bg{
+    background-image: url(Desain\ tanpa\ judul\ \(4\)\ \(1\).png);
+    width: 100%;
+}
+
+h2{
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+.container{
+    width: 100%;
+    height: 1000px;
+
+}
+
+.scroll{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    color: #fff;
+    background-image: url(Desain\ tanpa\ judul\ \(4\)\ \(1\).png);
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.scroll3{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    color: #fff;
+    background-image: linear-gradient(rgba(25, 136, 82, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0),rgba(255, 255, 255, 0), rgba(255, 255, 255, 0),  rgba(0, 0, 0, 1)), url(Desain\ tanpa\ judul\ \(4\)\ \(1\).png);
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+
+.scroll img{
+    margin-top: px;
+    width: 500px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.scroll3 img{
+    margin-top: px;
+    width: 500px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.scroll h1 {
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.scroll3 h1 {
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.scroll h2 {
+    margin-bottom: 10px;
+    background-color: #623700ab;
+    padding: 30px;
+    border-radius: 20px;
+    color:blanchedalmond;
+}
+
+.scroll3 h2 {
+    margin-bottom: 10px;
+    background-color: #623700ab;
+    padding: 30px;
+    border-radius: 20px;
+    color:blanchedalmond;
+}
+
+.scroll h4{
+    margin-top: -20px;
+    margin-left: -10px;
+    font-size: 15px;
+    text-align: center;
+    color: #623700bc;
+}
+
+.scroll3 h4{
+    margin-top: -20px;
+    margin-left: -10px;
+    font-size: 15px;
+    text-align: center;
+    color: #623700bc;
+}
+
+.footer-about h3, .footer-contact p{
+    color: white;
+}
+
+.footer-bottom p{
+    color: white;
+}
+
+.footer-social a {
+    color: white;
+}
+
+
+@media screen and (min-width: 539px) and (max-width: 1024px){
+    h1 {
+        font-size: 80px;
+        margin-bottom: -140px;
+    }
+
+    .scroll h3 {
+        font-size: 80px;
+        margin-top: -100px;
+        margin-bottom: 20px;
+    }
+
+    .scroll3 h3 {
+        font-size: 80px;
+        margin-top: -100px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .scroll img {
+        width: 400px;
+    }
+
+    .scroll3 img {
+        width: 400px;
+    }
+
+    .scroll h1 {
+        font-size: 80px;
+        margin-bottom: 30px;
+    }
+
+    .scroll3 h1 {
+        font-size: 80px;
+        margin-bottom: 30px;
+    }
+
+    .scroll h2 {
+        font-size: 18px;
+        padding: 25px;
+    }
+
+    .scroll3 h2 {
+        font-size: 18px;
+        padding: 25px;
+    }
+
+    .scroll h4 {
+        font-size: 14px;
+    }
+
+    .scroll3 h4 {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 679px) {
+    .navbar a{
+        color: #ffffff !important;
+    }
+    
+    .open{
+        background-color:  #5f492e !important;
+        
+    }
+    
+    header.open-menu {
+        background-color:#5f492e !important; 
+    }
+}
+
+@media screen and (max-width: 539px){
+    h1 {
+        font-size: 60px;
+        margin-bottom: -100px;
+    }
+
+    .scroll h3 {
+        font-size: 60px;
+        margin-top: -70px;
+        margin-bottom: 15px;
+    }
+    .scroll3 h3 {
+        font-size: 60px;
+        margin-top: -70px;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 16px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .scroll img {
+        width: 300px;
+    }
+
+    
+    .scroll3 img {
+        width: 300px;
+    }
+
+    .scroll h1 {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    .scroll3 h1 {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    .scroll h2 {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .scroll3 h2 {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .scroll h4 {
+        font-size: 12px;
+    }
+
+    .scroll3 h4 {
+        font-size: 12px;
+    }
+}

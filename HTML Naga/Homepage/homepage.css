@@ -1,0 +1,1093 @@
+
+@font-face {
+    font-family: "Pirata one";
+    src: url('../PirataOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Sedans-Regular";
+    src: url('../Sedan-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Sedans-Italic";
+    src: url('../Sedan-Italic.ttf');
+}
+
+body::-webkit-scrollbar {
+    display: none; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Pirata one";
+}
+
+:root{
+    --text-color: #ffffff;
+    --bg-color: #244532;
+    --main-color:  rgb(212,175,55);
+
+    --h1-font: 6rem;
+    --h2-font: 2.5rem;
+    --h3-font: 1.9rem;
+    --p-font: 1.2rem;
+}
+
+
+body{
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+section {
+    padding: 20vh 17% 60px;
+}
+
+.homepage {
+    padding: 0;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom,rgba(0 ,0 ,0 ,0.5),rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4),rgb(0, 69, 3,0)), url(image/banner.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 80% 20%;
+    align-items: center;
+    justify-items: center;
+    z-index: 999;
+}
+
+.captionhomepage {
+    position: relative;
+    text-align: center;
+    margin-top: 5vw;
+    width: 60%;
+    z-index: 1000;
+}
+
+.captionhomepage h1 {
+    font-size: var(--h1-font);
+    font-weight: 200;
+    line-height: 5.5vw;
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+
+}
+
+.captionhomepage h2 {
+    font-size: var(--h2-font);
+    font-weight: 200;
+    margin-bottom: 1vw;
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+}
+
+.captionhomepage h3 {
+    font-size: var(--h3-font);
+    font-weight: 200;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+}
+
+.regist {
+    margin-top: 10px;
+    color: var(--text-color);
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 10px;
+    background: var(--text-color);
+    font-size: 17px;
+    font-weight: 200;
+    border-style: solid;
+    border-color: rgb(255, 252, 252);
+    border-width: 1px;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    opacity: 1; 
+    transition: all .30s ease;
+    cursor: pointer;
+}
+
+.regist:hover {
+    color: rgb(212,175,55);
+    border-color: rgb(212,175,55);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.bgrumput{
+    position: relative;
+    width: 100%;
+    z-index: 10001;
+    grid-column: 1 /span 2;
+    grid-row: -2;
+}
+.introbg {
+    position: relative;
+
+}
+
+.bgintro {
+    background-color:#244532;
+    height: 380px; 
+    z-index: 900;
+}
+
+.intro {
+    height: 0; 
+    z-index: 998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+
+}
+
+.intro-content {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.intrologo {
+    width: 230px;
+    opacity: 0.8;
+    z-index: 10045;
+}
+
+.intro-caption {
+    flex: 1;
+    display: flex; 
+    justify-content: center; 
+}
+
+.intro-caption h3 {
+    font-size: 2.2vw;
+    font-weight: 200;
+    width: 50vw;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bgpage2 { 
+    width: 110%;
+}
+
+.page2{
+    position: relative;
+    padding: 0;
+    width: 100%; 
+    z-index: 10002;
+    height: 50vw;
+    background-image: url(image/kertas.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 4vw;
+}
+
+.captionpage2 {
+    opacity: 1;
+    text-align: center; 
+    z-index: 10003; 
+    color: #6c512f; 
+    height: 30%;
+    margin-top: 5vw;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.captionpage2 h1{
+    font-size: 6.8vw;
+    z-index: 10003; 
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.captionpage2 p{
+    opacity: 1;
+    font-size: 1.8vw;
+    margin-top: -1vw;
+    z-index: 10003; 
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.character{
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.char1, .char2, .char3, .char4, .char5 {
+    position: relative;
+    width: 220px;
+    background-size: cover;
+    mask: url(image/paperchara.png);
+    mask-repeat: no-repeat;
+    mask-size: 100%;
+    background-color: black;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.char1 img , .char2 img, .char3 img , .char4 img , .char5 img{
+    width: 100%;
+    height: 100%;
+    z-index: 10006;
+    transition: all 0.5s;
+    filter: grayscale(80%);
+}
+
+
+
+.characapt1 , .characapt2 ,.characapt3 , .characapt4 , .characapt5{
+    opacity: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 10008;
+    width: 100%;
+    height: 90%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s; 
+}
+
+.characapt11 , .characapt22, .characapt33, .characapt44, .characapt55{
+    font-size: 20px ;
+}
+
+.all:hover {
+    opacity: 1;
+}
+
+.hoverbwang:hover img{
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+.page3{
+    padding: 0;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom ,rgba(36, 69, 50,1),rgba(0, 63, 3, 0), rgba(0, 63, 3, 0),rgba(0, 63, 3, 0), rgba(0, 63, 3, 0),rgba(0, 63, 3, 0),rgb(0, 0, 0)), url(image/bgsect3.png);
+    background-size: cover; 
+    z-index: 10011;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contetpage3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bannerclass{   
+    width: 100%;
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannerclass img{
+    margin-top: 3vw;
+    height: 20vw;
+    margin-bottom: 3vw;
+}
+
+.bannercaption{
+    position: relative;
+    text-align:center;
+    width: 50%;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    flex-direction: column;
+    
+}
+
+.bannercaption h1{
+    font-size: 8vw;
+    font-weight: 100;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.bannercaption h3{
+    margin-top: 1vw;
+    font-size: 1.5vw;
+    font-weight: 100;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contetpage3 a{
+    margin-top: 14px;
+    font-family: "Pirata one", sans-serif;
+    font-size: 2vw;
+    background-color: transparent;
+    border: 1px solid;
+    padding: 0.5em 1.5em;
+    border-radius: 20em;
+    user-select: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all .30s ease;
+    color: rgb(212,175,55);
+    position: relative;
+    box-shadow: inset 0 4px 6px -1px rgb(0 0 0 / 0.1), 
+    0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px 17%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.footerlogo{
+    width: 5vw;
+}
+
+.footer-about h3{
+    font-weight: 100;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+    
+}
+
+.footer-links{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-about h3, .footer-links h3, .footer-contact h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-about p, .footer-contact p {
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+.footer-links ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    gap: 2vw;
+}
+
+.footer-links ul li {
+    margin-bottom: 1vw;
+}
+
+.footer-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: rgb(212,175,55);
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1.6vw;
+}
+
+.footer-social a {
+    color: white;
+    margin-top: 0.5vw;
+    transition: transform 0.3s;
+}
+
+.footer-social a:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    margin-top: -8px;
+    padding-top: 10px;
+    font-size: 0.9rem;
+}
+
+.contetpage3 a:hover{
+    box-shadow: 0 0 10px 0 rgb(212,175,55) inset, 0 0 10px 2px rgb(212,175,55);
+
+}
+
+@media (min-width: 0px) and (max-width: 1440px){
+
+    .captionhomepage {
+        margin-top: 7vw;
+        width: 100%;
+    }
+    
+    .captionhomepage h1 {
+        font-size: 8vw;
+        line-height: 7vw;
+    }
+    
+    .captionhomepage h2 {
+        font-size: 4vw;
+        font-weight: 200;
+        margin-bottom: 1vw;
+    }
+    
+    .captionhomepage h3 {
+        font-size: 2.7vw;
+        font-weight: 200;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        text-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+    }
+    
+    .regist {
+        font-size: 14px;
+    }
+    .bgrumput{
+        overflow: hidden;
+    }
+
+    .char1, .char2, .char3, .char4, .char5 {
+        position: relative;
+        width: 14.5vw;
+    }
+    
+} 
+
+@media (min-width: 0px) and (max-width: 1025px) {
+    .introbg {
+        object-fit: cover;
+        width: 110vw;
+        transform: translateX(-20px);
+    }
+
+    .bgintro {
+        background-color:#244532;
+        height: 330px; 
+        z-index: 900;
+    }
+
+    .bgpage2 { 
+        width: 110%;
+    }
+    
+    .page2{
+        position: relative;
+        padding: 0;
+        width: 100%; 
+        z-index: 10002;
+        height: 50vw;
+        background-image: url(image/kertas.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 4vw;
+    }
+    
+    .captionpage2 {
+        opacity: 1;
+        text-align: center; 
+        z-index: 10003; 
+        color: #6c512f; 
+        height: 30%;
+        margin-top: 5vw;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .captionpage2 h1{
+        font-size: 8vw;
+        z-index: 10003; 
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .captionpage2 p{
+        opacity: 1;
+        font-size: 2vw;
+        margin-top: -1vw;
+        z-index: 10003; 
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .character{
+        height: 60%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .char1, .char2, .char3, .char4, .char5 {
+        position: relative;
+        width: 15.5vw;
+        height: 80%;
+    }
+    
+    .characapt1 , .characapt2 ,.characapt3 , .characapt4 , .characapt5{
+        opacity: 0;
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: 10008;
+        width: 100%;
+        height: 90%;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        transition: all 0.5s; 
+    }
+    
+    .character .capttt {
+        font-size: 1.2vw;
+    }
+
+    .characapt11 , .characapt22, .characapt33, .characapt44, .characapt55{
+        font-size: 1.8vw ;
+    }
+    
+}
+
+@media (min-width: 0px) and (max-width: 821px){
+    .introbg {
+        object-fit: cover;
+        width: 170vw;
+        transform: translateX(-200px);
+    }
+
+    .bgrumput{
+        grid-row: -1;
+    }
+
+    .bgintro {
+        background-color:#244532;
+        height: 420px; 
+        z-index: 900;
+    }
+    
+    .contetpage3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2vw;
+    }
+
+    .bannerclass img{
+        margin-top: 3vw;
+        height: 30vw;
+        margin-bottom: 3vw;
+    }
+    
+    .bannercaption h1{
+        font-size: 13vw;
+        margin-bottom: 5vw;
+    }
+    .bannercaption h3{
+        margin-top: 6vw;
+        font-size: 3.5vw;
+    }
+
+    .bannercaption{
+        width: 70%;
+        
+    }
+
+    .contetpage3 a{
+        font-size: 30px;
+    }
+}
+
+
+@media (min-width: 0px) and (max-width: 768px) {
+
+    .bgrumput{
+        grid-row: -1;
+    }
+    .homepage {
+        grid-template-columns: 100%;
+        grid-template-rows: 80% 20%;
+    }
+    
+    .captionhomepage {
+        margin-top: 19vw;
+        width: 100%;
+    }
+    
+    .captionhomepage h1 {
+        font-size: 12vw;
+        line-height: 11vw;
+    }
+    
+    .captionhomepage h2 {
+        font-size: 6vw;
+        font-weight: 200;
+        margin-bottom: 1vw;
+    }
+    
+    .captionhomepage h3 {
+        font-size: 3.7vw;
+        font-weight: 200;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        text-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+    }
+    
+    .regist {
+        font-size: 2.6vw;
+    }
+
+    .introbg {
+        object-fit: cover;
+        width: 165vw;
+        transform: translateX(-155px);
+    }
+    .bgintro {
+        background-color:#244532;
+        height: 380px; 
+        z-index: 900;
+    }
+
+    .intro {
+        height: 60px; 
+        z-index: 998;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vw;
+    }
+    
+    .intro-content {
+        flex: 1;
+        max-width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .intrologo {
+        width:26vw;
+        opacity: 0.8;
+    }
+
+    .intro-caption h3 {
+        font-size: 2.9vw;
+        font-weight: 200;
+        width: 90vw;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        text-align: center;
+    }
+
+    .contetpage3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2vw;
+    }
+
+    .bannerclass img{
+        margin-top: 3vw;
+        height: 30vw;
+        margin-bottom: 3vw;
+    }
+    
+    .bannercaption h1{
+        font-size: 9vw;
+        margin-bottom: 5vw;
+    }
+    .bannercaption h3{
+        margin-top: 6vw;
+        font-size: 2.5vw;
+    }
+
+    .bannercaption{
+        width: 80%;
+        
+    }
+
+    .contetpage3 a{
+        font-size: 20px;
+    }
+
+}
+
+
+
+@media (min-width: 0px) and (max-width: 678px) {
+
+    .introbg {
+        object-fit: cover;
+        width: 170vw;
+        transform: translateX(-200px);
+    }
+
+    .intrologo {
+        width:30vw;
+        opacity: 0.8;
+    }
+    
+    .intro-caption h3 {
+        font-size:3vw;
+        width: 90vw;
+    }
+
+    .page2{
+        position: relative;
+        height: 290vw;
+        background-image: url(image/kertaspp.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        /* margin-bottom: ; */
+    }
+
+    .captionpage2 {
+        opacity: 1;
+        text-align: center; 
+        z-index: 10003; 
+        color: #6c512f; 
+        height: 9%;
+        margin-top: 6vw;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .captionpage2 h1{
+        font-size: 12.8vw;
+        z-index: 10003; 
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .captionpage2 p{
+        opacity: 1;
+        font-size: 3.8vw;
+        margin-top: -1vw;
+        z-index: 10003; 
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .character{
+        height: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        gap: 4vw;
+    }
+    
+    .char1, .char2, .char3, .char4, .char5 {
+        position: relative;
+        width:30vw;
+        background-size: cover;
+        mask: url(image/paperchara.png);
+        mask-repeat: no-repeat;
+        mask-size: 100%;
+        background-color: black;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    
+    .char1 img , .char2 img, .char3 img , .char4 img , .char5 img{
+        width: 100%;
+        height: 100%;
+        z-index: 10006;
+        transition: all 0.5s;
+        filter: grayscale(80%);
+    }
+    
+    .characapt1 , .characapt2 ,.characapt3 , .characapt4 , .characapt5{
+        width: 100%;
+        height: 90%;
+    }
+    
+    .characapt11 , .characapt22, .characapt33, .characapt44, .characapt55{
+        font-size: 3vw ;
+    }
+
+    .character .capttt {
+        font-size: 2.2vw;
+    }
+
+}
+
+@media (min-width: 0px) and (max-width: 673px) {
+
+    .introbg {
+        object-fit: cover;
+        width: 210vw;
+        transform: translateX(-200px);
+    }
+    
+    .intrologo {
+        width:30vw;
+        opacity: 0.8;
+        margin-top: 2vw;
+    }
+
+    .intro-caption h3 {
+        font-size:3vw;
+        width: 90vw;
+    }
+
+}
+
+@media (min-width: 0px) and (max-width: 524px) {
+
+    .intrologo {
+        width:40vw;
+        opacity: 0.8;
+    }
+    
+    .intro-caption h3 {
+        font-size:3.5vw;
+        width: 80vw;
+    }
+
+    .bgintro {
+        background-color:#244532;
+        height: 380px; 
+        z-index: 900;
+    }
+
+}
+
+@media (min-width: 0px) and (max-width: 512px){
+    .introbg {
+        object-fit: cover;
+        transform: translateX(-200px);
+        width: 220vw;
+    }
+    .bgintro {
+        background-color:#244532;
+        height: 530px; 
+        z-index: 900;
+    }
+
+
+    .intro {
+        height: 90px; 
+        z-index: 998;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vw;
+    }
+    
+
+    .intrologo {
+        width:50vw;
+        opacity: 0.8;
+    }
+    
+    .intro-caption h3 {
+        font-size:4vw;
+        width: 80vw;
+    }
+    .bgintro{
+        padding: 0;
+        padding-top: 35vw;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 426px){
+
+    .captionhomepage {
+        margin-top: 23vw;
+        width: 100%;
+    }
+    
+    .captionhomepage h1 {
+        font-size: 17vw;
+        line-height: 15vw;
+    }
+    
+    .captionhomepage h2 {
+        font-size: 10vw;
+        font-weight: 200;
+        margin-bottom: 1vw;
+    }
+    
+    .captionhomepage h3 {
+        font-size: 5.7vw;
+        font-weight: 200;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        text-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+    }
+    
+    .regist {
+        font-size: 3.6vw;
+    }
+
+    .introbg {
+        object-fit: cover;
+        width: 260vw;
+    }
+
+    .bgrumput{
+        grid-row: -1;
+    }
+
+    .bgintro {
+        background-color:#244532;
+        height: 430px; 
+        z-index: 900;
+    }
+    
+    .intrologo {
+        width:50vw;
+        opacity: 0.8;
+
+    }
+    
+    .intro-caption h3 {
+        font-size:4vw;
+        width: 80vw;
+    }
+
+    .contetpage3 {
+        margin-top: 0vw;
+    }
+
+    .bannerclass img{
+        margin-top: 3vw;
+        height: 60vw;
+        margin-bottom: 3vw;
+    }
+    
+    .bannercaption h1{
+        font-size: 14vw;
+        margin-bottom: 25vw;
+    }
+    .bannercaption h3{
+        margin-top: 20vw;
+        font-size: 4vw;
+    }
+
+    .footerlogo{
+        width: 15vw;
+        margin-top: 2vw;
+    }
+
+    .footer-links{
+        font-size: 3.2vw;
+    }
+
+    
+}
+
+@media (min-width: 0px) and (max-width: 376px){
+    .bgintro {
+        background-color:#244532;
+        height: 400px; 
+        z-index: 900;
+    }
+    
+}
+
+@media (min-width: 0px) and (max-width: 321px){ 
+
+    
+    
+    .intro-caption h3 {
+        font-size:5vw;
+        width: 80vw;
+    }
+    .bgintro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-content: center;
+        align-self: center;
+        align-items: center; */
+        padding: 0;
+        /* padding-top: 35vw; */
+        /* align-items: center; */
+    }
+    .intro-content{
+        justify-content: center;
+    }
+
+    
+    .contetpage3 {
+        margin-top: 0vw;
+    }
+
+    .bannerclass img{
+        margin-top: 3vw;
+        height: 60vw;
+        margin-bottom: 3vw;
+    }
+    
+    .bannercaption h1{
+        font-size: 15vw;
+        margin-bottom: 25vw;
+    }
+    .bannercaption h3{
+        margin-top: 20vw;
+        font-size: 5vw;
+    }
+    
+    .footer-contact p {
+        font-size: 4.5vw;
+    }
+    
+}
+
+
+
+/* 
+
+
+
+
+
+
+
+
+
+ */

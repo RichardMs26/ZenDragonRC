@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="../Header/header.css">
+    <link rel="stylesheet" href="../Footer/footer.css">
+    <link rel="stylesheet" href="dragonclass.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> -->
+
+    <title>Zen Dragon Academy</title>
+</head>
+<body>
+    <script src="homepage.js"></script>
+    <header>
+        <img class="logo" src="../Header/image/logofix.png">
+                
+        <ul class="navbar" id="navbar1">
+            <li><a href="../Homepage/homepage.html">Home</a></li>
+            <li><a href="../Character/character.html">Character</a></li>
+            <li><a href="../DragonClass/dragonclass.html">Dragon Class</a></li>
+            <li><a href="../IsleOfBerk/IsleOfBerk.html">Isle of Berk</a></li>
+            <li><a href="../regis/regis.html" class="capt" >Register</a></li>
+        </ul>
+        
+        <div class="hright">
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+                <img src="../Header/image/bx-menu.svg" id="menu-icon" onclick="opennav()">
+                <img src="../Header/image/X.svg" id="close-icon" onclick="closenav()">
+            </label>
+        </div>
+    </header>
+    
+
+    <div class="slider">
+        <div class="list">
+            <div class="item active">
+                <img src="image/bgapi.png" class="bg">
+                <div class="bannerapi">
+                    <div class="grid-kiri">
+                        <img src="image/bannerapi.png" class="chara111">
+                    </div>
+                    <div class="captapi">
+                        <h1>Fire Element Class</h1>
+                        <p>The Fire Element Class is home to the fiercest and most powerful dragons whose flames can turn the night into day. These dragons possess the ability to breathe intense fire and withstand extreme heat, making them formidable in battle. They are known for their fiery tempers and boundless energy, often seen soaring through the skies with trails of fire in their wake. Training a fire dragon requires a brave heart and a steady hand, as their flames can be as unpredictable as they are intense.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/bgair.png" class="bg">
+                <div class="bannerapi">
+                    <div class="grid-kiri">
+                        <img src="image/bannerair.png" class="chara111">
+                    </div>
+                    <div class="captapi">
+                        <h1>Water Element Class</h1>
+                        <p>The Water Element Class includes dragons that thrive in aquatic environments, capable of manipulating water in its many forms. These dragons can create powerful waves, summon rainstorms, and dive to incredible depths. Known for their calm and serene nature, water dragons are powerful allies in both sea and freshwater environments. Training a water dragon requires patience and harmony, as understanding the ebb and flow of water is crucial to mastering their unique abilities.                    </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/bgtanah.png" class="bg">
+                <div class="bannerapi">
+                    <div class="grid-kiri">
+                        <img src="image/bannertanah.png" class="chara111">
+                    </div>
+                    <div class="captapi">
+                        <h1>Earth Element Class</h1>
+                        <p>The Earth Element Class features dragons with a profound connection to the ground beneath their feet. These dragons possess the strength to move mountains and the resilience to endure the harshest environments. They can manipulate rocks, soil, and minerals, creating formidable defenses and powerful attacks. Earth dragons are known for their steadfast and loyal nature. Training an earth dragon requires strength, endurance, and a deep respect for the power and stability of the earth, enabling the rider to command the very ground they stand on.
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/bgdaun.png" class="bg">
+                <div class="bannerapi">
+                    <div class="grid-kiri">
+                        <img src="image/bannerdaun.png" class="chara111">
+                    </div>
+                    <div class="captapi">
+                        <h1>Leaf Element Class</h1>
+                        <p>The Leaf Element Class is comprised of dragons that embody the essence of nature and plant life. These dragons have the ability to control vegetation, from summoning vines to creating protective barriers of leaves and branches. They are often seen as guardians of the forest, fostering growth and balance in their surroundings. Training a leaf dragon involves a deep connection with nature and an understanding of the intricate relationships within the ecosystem, allowing the rider to harness the power of the natural world.                    </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/bgangin.png" class="bg">
+                <div class="bannerapi">
+                    <div class="grid-kiri">
+                        <img src="image/bannerangin.png" class="chara111">
+                    </div>
+                    <div class="captapi">
+                        <h1>Air Element Class</h1>
+                        <p>The Air Element Class features dragons that command the winds and skies with unparalleled grace and speed. These dragons can create powerful gusts of wind and control air currents, allowing them to fly higher and faster than any other class. They are often agile and swift, making them excellent scouts and messengers. Training an air dragon involves learning to harness the power of the wind and mastering aerial maneuvers, transforming the rider and dragon into an unstoppable duo in the sky.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+
+        <div class="thumbnail">
+            <div class="item active">
+                <img src="image/bannerapi.png">
+
+            </div>
+            <div class="item">
+                <img src="image/bannerair.png">
+
+            </div>
+            <div class="item">
+                <img src="image/bannertanah.png">
+
+            </div>
+            <div class="item">
+                <img src="image/bannerdaun.png">
+
+            </div>
+            <div class="item">
+                <img src="image/bannerangin.png">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="dragonclass.js"></script>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <img src="../Header/image/logofix.png" class="footerlogo">
+                <h3>Zen Dragon Academy</h3>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../Homepage/homepage.html">Home</a></li>
+                    <li><a href="../Character/character.html">Character</a></li>
+                    <li><a href="../DragonClass/dragonclass.html">Dragon Class</a></li>
+                    <li><a href="../IsleOfBerk/IsleOfBerk.html">Isle of Berk</a></li>
+                    <li><a href="../regis/regis.html">Register</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <p>Email: zendragonacademy@gmail.com</p>
+                <p>Address: Isle of Berk, Dragon Land</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Zen Dragon Academy. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="../Header/header.js"></script>
+</body>
+</html>
