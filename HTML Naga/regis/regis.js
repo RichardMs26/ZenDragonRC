@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (valid) {
             alert('success');
             // form.submit();
-            window.location.href="../HomePage/homepage.html";
+            window.location.href='../HomePage/homepage.html';
         }
     });
 
